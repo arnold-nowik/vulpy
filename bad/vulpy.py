@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import trend_app_protect.start
 
 from pathlib import Path
 
@@ -52,4 +53,4 @@ def add_csp_headers(response):
     return response
 
 
-app.run(debug=True, host='127.0.1.1', port=5000, extra_files='csp.txt')
+app.run(debug=True, host='0.0.0.0', port=5000, extra_files='csp.txt')
